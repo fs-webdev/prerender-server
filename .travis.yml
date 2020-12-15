@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - "12"
+before_install:
+  - echo "${NPM_REGISTRY}:_authToken=${NPM_TOKEN}" >> ~/.npmrc
+  - echo "@fs:registry=https:${NPM_REGISTRY}" >> ~/.npmrc
+branches:
+  only:
+    - master
+
+deploy:
+  - provider: script
+    edge: true
+    cleanup: false
+    # this needs to be npm run publish, not npm publish in order to run the publish command in package.json
+    script: npm run publish
+    on:
+      branch: master
