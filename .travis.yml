@@ -4,7 +4,6 @@ node_js:
 before_install:
   - echo "${NPM_REGISTRY}:_authToken=${NPM_TOKEN}" >> ~/.npmrc
   - echo "@fs:registry=https:${NPM_REGISTRY}" >> ~/.npmrc
-script: npm run lint && npm run test -- --coverage
 branches:
   only:
     - master
