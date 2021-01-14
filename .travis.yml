@@ -13,6 +13,6 @@ deploy:
     edge: true
     cleanup: false
     # this needs to be npm run publish, not npm publish in order to run the publish command in package.json
-    script: npm run publish
+    script: npm run publish --allow-earlier-version
     on:
       branch: master

@@ -18,7 +18,7 @@
     "valid-url": "^1.0.9"
   },
   "devDependencies": {
-    "@fs/npm-publisher": "^1.1.1",
+    "@fs/npm-publisher": "^1.2.0",
     "mocha": "^8.2.1",
     "sinon": "^9.2.2"
   },
