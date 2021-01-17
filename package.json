@@ -2,7 +2,7 @@
   "author": "Prerender.io",
   "name": "@fs/prerender",
   "description": "Service to prerender Javascript rendered pages for SEO, customized for FamilySearch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "upstreamVersion": "5.8.0",
   "license": "MIT",
   "repository": {
